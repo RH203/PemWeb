@@ -11,7 +11,3 @@ Each assignment directory may contain additional subdirectories or files as requ
 ## How to Use
 
 To access a specific assignment, navigate to the corresponding directory in this repository. Each assignment directory contains its own README file with specific instructions and requirements. You can also find the source code, documentation, and any additional resources related to the assignment within its directory.
-
-## License
-
-This repository is licensed under the [MIT License](LICENSE).
