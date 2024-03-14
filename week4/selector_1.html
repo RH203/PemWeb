@@ -6,13 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Selector</title>
   <style>
-    body{
+    body {
       margin: 0;
     }
+
     .container {
       margin: 20px;
       display: flex;
       justify-content: space-between;
+    }
+
+    #logo {
+      width: 100px;
+      border-radius: 15%;
+      border: solid black 1px;
     }
 
     #title {
@@ -31,8 +38,11 @@
 
 <body>
   <div class="container">
-    <h1 id="title">Helo world</h1>
-    <p id="content">Ini p</p>
+    <div>
+      <img id="logo" src="assets/logo.png" alt="Logo informatika">
+      <h1 id="title">Informatika</h1>
+    </div>
+    <p id="content">Pemrograman web</p>
   </div>
 </body>
 
