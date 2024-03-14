@@ -7,19 +7,22 @@
   <title>Selector</title>
   <style>
     body {
+      width: 1440px;
       margin: 0;
     }
 
     .container {
+      max-width: 400px;
       margin: 20px;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
     }
 
     #logo {
       width: 100px;
       border-radius: 15%;
       border: solid black 1px;
+      cursor: pointer;
     }
 
     #title {
@@ -33,6 +36,11 @@
       font-size: 20px;
       text-decoration: line-through;
     }
+
+    a[href] {
+      text-decoration: none;
+      color: red;
+    }
   </style>
 </head>
 
@@ -43,6 +51,8 @@
       <h1 id="title">Informatika</h1>
     </div>
     <p id="content">Pemrograman web</p>
+
+    <a href="https://flutter.dev">Link</a>
   </div>
 </body>
 
