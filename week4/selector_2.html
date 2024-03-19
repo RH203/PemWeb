@@ -8,15 +8,15 @@
 
   <!-- Selector -->
   <style>
-    a[href] {
+    a {
       font-size: 50px;
-      text-decoration: underline;
+      text-decoration: none;
     }
 
+    /* Dynamic Pseudo Class Selector */
     a:hover {
-      color: black;
-      text-decoration: none;
-      font-size: 60px;
+      color: cadetblue;
+      text-decoration: underline;
     }
 
     input {
@@ -24,12 +24,15 @@
       height: 30px;
     }
 
+    /* Dynamic Pseudo Class Selector */
     input:focus {
-      border: solid orange 3px;
+      border: solid 2px orange;
+      outline: none;
     }
 
+    /* State Pseudo Class Selector */
     input:disabled {
-      border: solid gray 3px;
+      border: solid 2px gray;
     }
 
     table {
@@ -40,24 +43,30 @@
 
     th,
     td {
-      border: solid black 1px;
-      padding: 8px;
+      border: solid 1px black;
+      padding: 10px;
     }
 
+    /* Structural Pseudo Class Selector */
     tr:first-child {
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    tr:last-child {
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: right;
       color: red;
     }
 
-    tr:nth-child(2){
-      color: blue;
+    tr:nth-child(odd) {
+      background-color: lightgrey
     }
 
-    tr:nth-child(odd){
-      color: green;
-    }
-
-    tr:last-child{
-      color: yellow;
+    tr:nth-child(even) {
+      background-color: white;
     }
   </style>
 </head>
