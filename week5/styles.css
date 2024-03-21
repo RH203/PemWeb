@@ -160,7 +160,100 @@ html, body{
 }
 /** END SHOWCASE */
 
+/** Blog */
+.blog-container {
+  max-width: var(--container-width);
+  margin: 32px auto;
+}
 
+.blog-container header {
+  padding: 0 32px;
+  text-align: center;
+}
+
+.blog-container header hr {
+  border: 0;
+  border-top: 1px solid #ddd;
+  width: 25%;
+}
+
+.blog-index{
+  display: flex;
+  margin-top: 16px;
+  padding: 0 2%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.blog-index .snippet {
+  width: 100%;
+  margin: 16px 32px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.blog-index .snippet-txt {
+  padding: 0 16px;
+}
+
+.blog-index .snippet-txt small {
+  color: #999;
+}
+
+.blog-index .snippet-img {
+  width: 100%;
+}
+
+/** Blog END */
+
+/** Footer */
+.footer-container{
+  margin-top: 3rem;
+  color: white;
+  background-color: var(--dark-color);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 32px 16px;
+}
+.footer-container .footer-menu{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: var(--container-width);
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-container a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-container .footer-menu ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-container .footer-menu section{
+  width: 50%;
+  margin-bottom: 32px;
+}
+
+.footer-container .footer-copyright{
+  display: flex;
+  max-width: var(--container-width);
+  justify-content: space-between;
+  margin: 0 auto;
+
+}
+
+.logo-container img{
+  width: 180px;
+}
+/** Footer end*/
 @media screen and (min-width: 768px){
   /** Header*/ 
   .nav-container header nav{
@@ -176,6 +269,22 @@ html, body{
     display: none;
   }
 
-  /** Hero */
+  .showcase{
+    flex-direction: row;
+  }
+
+  .showcase-image, .showcase-text {
+    width: 100%;
+  }
+
+  .blog-index .snippet {
+    width: 32%;
+    margin: 0 0;
+  }
+
+  .footer-container .footer-menu section {
+    width: 25%;
+    margin-bottom: 0;
+  }
   
 }
