@@ -28,14 +28,14 @@ h1 {
   padding: 0.7em 1.2em;
   background-color: var(--main-color);
   color: #464646;
-  border-radius: 30px;
+  border-radius: 15px;
   font-size: 1.1em;
 }
 
 .button:hover {
   background-color: var(--main-color-hover);
   color: #2e2a2a;
-  transition: all 0.3s;
+  transition: ease-in .3s;
 }
 
 /* * BREAKPOINT TABLET */
@@ -172,3 +172,36 @@ h1 {
   }
   
   /* * END OF HEADER *
+
+  /** Hero */
+
+  .hero-container{
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0, 0, 0, 0.3)), url("assets/images/images/Informatika\ logo\ utama\ tulisan\ hitam.png");
+    height: 70vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-text{
+    text-align: center;
+    color: white;
+    padding: 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 4em;
+    color: var(--dark-color);
+  }
+
+  .hero-text p {
+    font-size: 2em;
+    margin: 0;
+    color: var(--dark-color);
+  }
+
+  /** END HERO*/
