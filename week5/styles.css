@@ -1,207 +1,181 @@
-:root {
+:root{
   --main-color : #ffd95c;
   --main-color-hover : #e6c34f;
   --dark-color : #2b2b2b;
   --container-width : 1100px;
 }
 
-* {
+*{
   box-sizing: border-box;
 }
-
-html, body {
+h1{
   padding: 0;
   margin: 0;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 32px;
 }
 
-h1 {
+html, body{
   padding: 0;
   margin: 0;
-  font-size: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .button {
+  background-color: var(--main-color);
+  margin-top: 1.4em;
+  padding: 0.7em 1.2em;
   text-decoration: none;
   display: inline-block;
-  margin-top: 1.3em;
-  padding: 0.7em 1.2em;
-  background-color: var(--main-color);
   color: #464646;
   border-radius: 15px;
-  font-size: 1.1em;
+  font-size: 1.3em;
 }
 
 .button:hover {
-  background-color: var(--main-color-hover);
-  color: #2e2a2a;
-  transition: ease-in .3s;
-}
-
-/* * BREAKPOINT TABLET */
-@media screen and (max-width: 768px){
-  /* Kode CSS Di Sini */
-
-  /* HEADER */
-  .nav-container header label {
-    display: inline-block;
-    color: white;
-    font-style: normal;
-    font-size: 2rem;
-    padding: 0.5rem;
-    padding-left: 1rem;
-}
-
-
-.nav-container header {
-    width: 100%;
-}
-
-
-.nav-container nav ul {
-    flex-direction: column;
-    width: 100%;
-    position: absolute;
-    top: 60px;
-    left: 0;
-}
-
-
-.nav-container li a {
-    display: block;
-    color: white;
-    background-color: var(--dark-color);
-    padding: 0 2em;
-    text-decoration: none;
-    text-transform: uppercase;
-    height: auto;
-}
-
-
-.nav-container li a:hover {
-    border-bottom: none;
-}
-
-
-.nav-container .logo {
-    position: absolute;
-    right: 0px;
-    z-index: 1000;
-}
-
-
-.nav-container .logo img {
-    width: 80px;
-    cursor: pointer;
-}
-
-
-.nav-container nav {
-    display: none;
-}
-
-
-.nav-container header input:checked~nav {
-    display: flex;
-}
-/*  *END OF HEADER */
-
-}
-
-/* *BREAKPOINT HANDPHONE */
-@media screen and (max-width: 481px){
-  /* *Kode CSS Di Sini */
-}
-
-
-/* *Header */
-.nav-container {
   background-color: var(--dark-color);
-    position: sticky;
-    top: 0px;
-    z-index: 100;
-  }
+  border-radius: 50px;
+  color: var(--main-color);
+  transition: ease-in-out .5s;
+}
+
+/** HEADER*/
+.nav-container{
+  background-color: var(--dark-color);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-container header nav{
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 60px;
+  left: 0;
+}
+.nav-container header input#hamburger{
+  display: none;
+}
+.nav-container header input:checked~nav{
+  display: inline-block;
+}
+.nav-container header label{
+  font-size: 32px;
+  padding: 8px;
+  color: white;
+  font-style: normal;
+}
+.nav-container header{
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.nav-container .logo img{
+  width: 180px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.nav-container header nav ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav-container header nav ul li{
+  height: 60px;
+  background-color: var(--dark-color);
+}
+.nav-container header nav ul li a{
+  height: 60px;
+  text-decoration: none;
+  color: white;
+  line-height: 60px;
+  text-transform: uppercase;
+  padding: 0 16px;
+  display: block;
+}
+.nav-container header nav ul li a:hover{
+  color: var(--main-color);
+  transition: ease-in-out 0.3s;
+  border-bottom: 5px solid var(--main-color);
+}
 
 
-  .nav-container header {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      width: 80%;
-      height: 60px;
-      margin: 0 auto;
-  }
-  
-  
-  .nav-container .logo img {
-      width: 180px;
-      padding-top: 10px;
-      cursor: pointer;
-  }
-  
-  
-  .nav-container ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-  }
-  
-  
-  .nav-container li a {
+/** HERO */
+.hero-container {
+  background-image: linear-gradient(to right bottom,rgba(0, 0, 0, 0.5) ,rgba(0, 0, 0, 0.1), 
+                  rgba(0, 0, 0, 0.35));
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+}
+
+.hero-text h1 {
+  font-size: 4em;
+  color: var(--dark-color);
+}
+
+.hero-text p {
+  font-size: 2em;
+  margin: 0;
+  color: var(--dark-color);
+}
+/* END OF HERO */
+
+/** SHOWCASE */
+.showcase-container:nth-child(
+  even
+) {
+  background-color: #f0f0f0;
+}
+
+.showcase{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.showcase-image, .showcase-text  {
+  margin: 16px;
+  width: auto;
+}
+
+.showcase-image {
+  width: 100%;
+  border: 1px solid silver;
+  padding: 4px;
+}
+/** END SHOWCASE */
+
+
+@media screen and (min-width: 768px){
+  /** Header*/ 
+  .nav-container header nav{
+      position: unset;
       display: block;
-      color: white;
-      padding: 0 1.1em;
-      text-decoration: none;
-      text-transform: uppercase;
-      height: 60px;
-      line-height: 60px;
   }
-  
-  
-  .nav-container li a:hover {
-      color: var(--main-color);
-      transition: all 0.3s;
-      border-bottom: 5px solid var(--main-color);
+  .nav-container nav ul{
+      display: flex;
+      justify-content: end;
   }
-  
-  
-  .nav-container header label,
-  #hamburger {
-      display: none;
+
+  .nav-container header label {
+    display: none;
   }
-  
-  /* * END OF HEADER *
 
   /** Hero */
-
-  .hero-container{
-    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0, 0, 0, 0.3)), url("assets/images/images/Informatika\ logo\ utama\ tulisan\ hitam.png");
-    height: 70vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .hero-text{
-    text-align: center;
-    color: white;
-    padding: 1rem;
-  }
-
-  .hero-text h1 {
-    font-size: 4em;
-    color: var(--dark-color);
-  }
-
-  .hero-text p {
-    font-size: 2em;
-    margin: 0;
-    color: var(--dark-color);
-  }
-
-  /** END HERO*/
+  
+}
