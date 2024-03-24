@@ -1,0 +1,91 @@
+:root{
+  --main-color: #a2a9ac;
+  --footer-color: #a7a5a5;
+  --sidebar-color: #7c457b;
+  --button-color: #262b38;
+  --button-text-color: #fff;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+h1{
+  padding: 0;
+  margin: 0;
+  font-size: 32px;
+}
+
+html, body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button {
+  background-color: var(--button-color);
+  margin-top: 1.4em;
+  padding: 0.7em 1.2em;
+  text-decoration: none;
+  display: inline-block;
+  color: var(--button-text-color);
+  border-radius: 15px;
+  font-size: 1.3em;
+}
+
+/*TODO: Sidebar*/
+.sidebar {
+  background-color: var(--sidebar-color);
+  color: #fff;
+  width: 150px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sidebar nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  padding: 20px;
+}
+
+.sidebar nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+.sidebar nav ul li a:hover {
+  color: #ccc;
+}
+
+.sidebar nav ul li:hover {
+  background-color: var(--button-color);
+  width: 100%;
+  border-radius: 30px;
+  transition: all ease-in-out .5s;
+}
+
+/*TODO: Main content*/
+
+.content {
+  padding-left: 170px;
+}
+
+/*TODO: Footer*/
+.footer {
+  margin-left: 170px; 
+  padding: 20px; 
+}
+
+.footer ul li img {
+  width: 40px;
+}
