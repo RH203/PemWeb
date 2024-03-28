@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logic</title>
+</head>
+
+<body>
+  <h1>Belaar condition js</h1>
+  <script>
+    let user = "admin"
+    if (user == "admin") {
+      console.log(`Selamat datang ${user}`)
+    }
+
+    let harga = 4000
+    if (harga < 4000) {
+      console.log(`Harga murah`)
+    } else {
+      console.log(`Harga mahal`)
+    }
+
+    let hari = 1
+    switch (hari) {
+      case 1:
+        console.log("Sekarang hari senin")
+        break;
+      case 2:
+        console.log("Sekarang hari selasa")
+        break
+      default:
+        console.log("Sekarang hari Tidak ada")
+        break;
+    }
+
+    let fruits = ["Jeruk", "Semangka", "Melon", "Pisang"]
+    for(let i = 0; i < fruits.length; i++) {
+      console.log(fruits[i])
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Belajar Function JS</h1>
+  <script>
+    function helloWorld() {
+      return console.log("Hello world")
+    }
+    helloWorld();
+
+    function helloWorld1(name) {
+      return console.log(`Hello world ${name}`)
+    }
+    helloWorld1("budi");
+
+    // default value on params
+
+    function sum(a, b = 10) {
+      return console.log(a + b)
+    }
+
+    sum(1)
+
+    const minus = function (a, b = 10) {
+      return console.log(a - 10)
+    }
+
+    minus(100)
+
+    const genap = (a) => {
+      return a % 2 == 0 ? console.log("GENAP") : console.log("GANJIL")
+    }
+
+    genap(100)
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>
