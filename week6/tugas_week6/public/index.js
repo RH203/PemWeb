@@ -135,17 +135,17 @@ function showSelectedOperator() {
   let elements = document.getElementsByClassName("operator");
 
   for (let i = 0; i < elements.length; i++) {
-    elements[i].style.backgroundColor = "#e68a00";
+    elements[i].style.backgroundColor = "red";
   }
 
   if (operatorValue == "+") {
-    document.getElementById("plusOp").style.backgroundColor = "#ffd11a";
+    document.getElementById("plusOp").style.backgroundColor = "red";
   } else if (operatorValue == "-") {
-    document.getElementById("subOp").style.backgroundColor = "#ffd11a";
+    document.getElementById("subOp").style.backgroundColor = "red";
   } else if (operatorValue == "*") {
-    document.getElementById("multiOp").style.backgroundColor = "#ffd11a";
+    document.getElementById("multiOp").style.backgroundColor = "red";
   } else if (operatorValue == "/") {
-    document.getElementById("divOp").style.backgroundColor = "#ffd11a";
+    document.getElementById("divOp").style.backgroundColor = "red";
   }
 }
 
@@ -180,7 +180,7 @@ function backspaceRemove() {
   let elements = document.getElementsByClassName("operator");
 
   for (let i = 0; i < elements.length; i++) {
-    elements[i].style.backgroundColor = "#e68a00";
+    elements[i].style.backgroundColor = "red";
   }
 
   let lastNum = box.innerText;
@@ -275,7 +275,7 @@ function calculatePercentage() {
   operatorValue = "=";
 
   for (let i = 0; i < elements.length; i++) {
-    elements[i].style.backgroundColor = "#e68a00";
+    elements[i].style.backgroundColor = "red";
   }
 }
 
@@ -330,8 +330,7 @@ function keyPressed(e) {
     if (e.key == "Enter") {
       buttonNumber(enterPress);
     } else if (e.key == "Backspace") {
-      document.getElementById("backspace_btn").style.backgroundColor =
-        "#999999";
+      document.getElementById("backspace_btn").style.backgroundColor = "red";
       backspaceRemove();
     } else if (commaPress) {
       buttonNumber(dot);
@@ -368,6 +367,6 @@ function keyReleased(e) {
   keyCombination = [];
   e.preventDefault();
   if (e.key == "Backspace") {
-    document.getElementById("backspace_btn").style.backgroundColor = "#666666";
+    document.getElementById("backspace_btn").style.backgroundColor = "red";
   }
 }

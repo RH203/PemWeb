@@ -54,3 +54,7 @@ button {
   width: 60px;
   margin: 2px;
 }
+
+.operator {
+  font-weight: bold;
+}
