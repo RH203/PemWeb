@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Form</title>
+</head>
+
+<body>
+  <h1>Belajar Javascript: Form Validation</h1>
+  <form id="formKu" name="formKu" method="get" action="proses.php">
+    <p>
+      Username: <input type="text" name="username" id="username" />
+      <span id="usernameSpan"></span>
+    </p>
+    <p>
+      Email: <input type="email" name="email" id="email" />
+      <span id="emailSpan"></span>
+    </p>
+    <p>
+      Password: <input type="password" name="pass" id="pass" />
+      <span id="passSpan"></span>
+    </p>
+    <p>
+      No telephone:
+      <input type="tel" name="telephone" id="telephone" /><span id="telephoneSpan"></span>
+    </p>
+    <p>
+      Gender:
+      <input type="radio" name="gender" id="genderMale" value="male" />
+      <label for="genderMale">Male</label><span id="genderSpan"></span>
+      <input type="radio" name="gender" id="genderFemale" value="female" />
+      <label for="genderFemale">Female</label><span id="genderSpan"></span>
+    </p>
+    <p>
+      Alamat website: <input type="url" name="url" id="url" />
+      <span id="urlSpan"></span>
+    </p>
+    <p>
+      <input type="submit" name="submit" id="submit" value="Kirim Data" />
+    </p>
+  </form>
+  <script src="javascript/index.js"></script>
+</body>
+
+</html>
