@@ -135,6 +135,7 @@ document.getElementById("formKu").addEventListener("submit", function (e) {
   if (isValid) {
     e.preventDefault();
     console.log(`${usernameNode.value}`);
+    console.log("Form submitted successfully!");
   } else {
     e.preventDefault();
   }
