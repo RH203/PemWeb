@@ -10,13 +10,13 @@
 
 <body>
   <h1>Belajar Javascript: Form Validation</h1>
-  <form id="formKu" name="formKu" method="get" action="proses.php">
+  <form id="formKu" name="formKu" method="get" action="">
     <p>
-      Username: <input type="text" name="username" id="username" />
+      Username: <input type="text" name="username" id="username" autocomplete="username" />
       <span id="usernameSpan"></span>
     </p>
     <p>
-      Email: <input type="email" name="email" id="email" />
+      Email: <input type="email" name="email" id="email" autocomplete="email" />
       <span id="emailSpan"></span>
     </p>
     <p>
@@ -29,13 +29,13 @@
     </p>
     <p>
       Gender:
-      <input type="radio" name="gender" id="genderMale" value="male" />
+      <input type="radio" name="gender" id="genderMale" value="male" checked />
       <label for="genderMale">Male</label><span id="genderSpan"></span>
       <input type="radio" name="gender" id="genderFemale" value="female" />
       <label for="genderFemale">Female</label><span id="genderSpan"></span>
     </p>
     <p>
-      Alamat website: <input type="url" name="url" id="url" />
+      Alamat website: <input type="text" name="url" id="url" />
       <span id="urlSpan"></span>
     </p>
     <p>
