@@ -84,7 +84,7 @@ if (isset($_POST["submit"])) {
     if ($result) {
       $message = "Mahasiswa dengan nama = \"<b>$name</b>\" sudah berhasil di tambah";
       $message = urlencode($message);
-      header("Location: student_view.php?message={$message}");
+      header("Location: mahasiswa.php?message={$message}");
     } else {
       die("Query gagal dijalankan: " . mysqli_errno($conn) . " - " . mysqli_error($conn));
     }
