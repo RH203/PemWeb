@@ -9,4 +9,5 @@ if (!$hasil) {
   die("Gagal mengisi table admin");
 } else {
   echo "Table <b>admin</b> berhasil mengisi";
-} ?>
+} 
+?>
