@@ -87,7 +87,7 @@ if (!$HASIL) {
 
 //Insert Data admin
 $username = "admin";
-$password = sha1("adminmahasiswa");
+$password = sha1("admin");
 $query = "INSERT INTO admin VALUES ('','$username','$password')";
 $hasil = mysqli_query($connection, $query);
 if (!$hasil) {
@@ -107,5 +107,8 @@ if (!$hasil) {
 }
 
 mysqli_close($connection);
+
+
+
 
 ?>
