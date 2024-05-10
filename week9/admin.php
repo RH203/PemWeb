@@ -1,4 +1,4 @@
-<?php //Insert Data admin
+<?php 
 include ('connections.php');
 
 $username = "admin";
